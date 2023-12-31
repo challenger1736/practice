@@ -1,0 +1,19 @@
+img{
+    height: 300px;
+    border: 1px solid black;
+}
+
+h1, span{
+    color: orange;
+}
+
+.t{
+    font-size: 16px;
+    color: black;
+}
+
+div{
+    background-color: #0f6878;
+    padding: 20px;
+    color: white;
+}

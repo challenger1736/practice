@@ -1,0 +1,26 @@
+#wrap{
+    width: 400px;
+    border: 2px solid #e8e8e8;
+
+}
+
+img{
+    width: 100%;
+}
+
+
+.id>div{
+    padding: 10px;
+}
+
+.id > div:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid #e8e8e8;
+    padding-top: 20px;
+}
+
+span{
+    color: orange;
+    font-weight: bold;
+}

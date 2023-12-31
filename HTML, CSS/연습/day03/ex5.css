@@ -1,0 +1,68 @@
+body>div{
+    width: 300px;
+}
+
+#updiv{
+    height:250px;
+    text-align: center;
+
+}
+
+body> div>div{
+    border: 2px lightgray solid;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 30px;
+}
+
+    #insta{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+input{
+    font-size: 10px;
+    width: 220px;
+    box-sizing: border-box;
+    margin: 3px;
+    height: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid lightgray;
+    padding: 5px;
+    outline: none;
+}
+
+    #login{
+        font-weight: bold;
+        color: white;
+        background-color:#4cb5f9;
+        border: none;
+        border-radius: 7px;
+        height: 25px;
+        font-size: 12px;
+        padding: 1px; /* 가운데 정렬을 위해 */
+    }
+
+    #login:hover, #fblogin:hover, #pw:hover, a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #fblogin, #pw{
+        font-weight: bold;
+        font-size: 12px;
+        color: #385185;
+        padding-top: 18px;
+    }
+
+    a{
+        color: #4cb5f9;
+        text-decoration: none;
+    }
+
+    #ac{
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+    }
