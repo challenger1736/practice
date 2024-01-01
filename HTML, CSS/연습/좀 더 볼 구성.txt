@@ -3,7 +3,7 @@
 flex-direction: column
 justify-content:flex-end
 
-그냥 해당 자식을 가운데 정렬하고 싶은 놈이 있을때
+그냥 해당!! 자식을 가운데 정렬하고 싶은 놈이 있을때
 display: inline-flex;
 justify-content: center;
 
