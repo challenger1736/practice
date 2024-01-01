@@ -1,0 +1,119 @@
+*{
+    margin: 0px ; padding: 0px;
+
+}
+
+li{
+    list-style: none;/* 글머리 */
+}
+
+/* 전체구역 */
+#wrap{
+    width: 700px; margin: 10px auto;
+}
+
+/* 헤더 이미지 */
+
+#header > img{ width: 100%; } /* 이거 헷갈릴 수 있음 */
+
+/* 헤더 카테고리 */
+
+#header > ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+/* 선택된 카테고리 */
+#header > ul > .selectMenu{
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    color: red; font-weight: bold;
+}
+
+/* 제품 목록 구역 */
+#productBox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    /* 자식요소가 부모요소보다 커졌을때. */
+    overflow-y: scroll;
+}
+
+#productBox > .product{
+    width: 200px;
+    margin: 20px 10px;
+}
+/* 제품 이미지 */
+#productBox > .product >img {
+    width: 100%;}
+/* 제품 이름 가격 */
+#productBox > .product > .pinfo{text-align: center;}
+#productBox > .product  .pname{font-weight: bold;}
+#productBox > .product  .pprice{color: red; font-weight: bold;}
+
+/* 카트 버튼들 */
+#cartBtns{ display: flex;}
+#cartBtns > input{
+    width: 100%; height: 50px;
+    font-size: 20px; border: none;
+    color: white; font-weight: bold;
+}
+
+/* 자식이 여러개 일때[형제가 여러개일때] 자식의 순번으로 선택가능 n th번째 child*/
+#cartBtns > input:nth-child(1){ background-color: black; }
+#cartBtns > input:nth-child(2){ background-color: red; }
+
+#cartContent{
+    background-color: lightgray;
+}
+
+/* 카트 정보의 상단부분 */
+#cartTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+   
+}
+
+#cartBottom{
+    height: 150px;  
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+#cartBottom > .citem{
+    /* width: 150px; */ /* 부모요소가 flex이면서 nowrap이면 사이즈 자동 변환 */
+    min-width: 150px; /* 최소 사이즈 */
+    background-color: white;
+    margin: 10px; padding: 10px;
+    position: relative;
+}
+
+#cartBottom > .citem > span {
+    position : absolute;
+    top : 10px ; right: 10px;
+}
+
+#cartBottom > .citem > div:nth-child(1){
+    width: 90%; height: 70px;
+}
+
+#cartBottom > .citem > div:nth-child(2){
+    color: red; font-weight: bold;
+}
+
+#cartTop div:nth-child(1)> span{
+    background-color: red;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 3px; width: 25px; text-align: center;
+    color: white;
+}
+
+#cartTop div:nth-child(2)> span{
+    color: red;
+    font-weight: bold;
+    
+}

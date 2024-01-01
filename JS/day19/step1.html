@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+    
+</head>
+<body>
+    
+    <div id="wrap"><!-- 전체 구역 -->
+        <div id="header">
+            <img src="img/5e5f78ad-a561-4936-862b-3d8da08af32c.png"/>
+            <ul>
+                <li onclick="printCategory()">신제품(NEW)</li>
+                <li class="selectMenu">프리미엄</li>
+                <li>와퍼&주니어</li>
+                <li>치킨&슈림프버거</li>
+                <li>올데이킹&킹모닝</li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox">
+                <!-- 제품 1개 -->
+                <div class="product">
+                    <img src="img/burger1.png" />
+                    <div class="pinfo">
+                        <div class="pname">큐브스테이크와퍼</div>
+                        <div class="pprice">9,000원</div>
+                    </div>
+                </div>
+                 
+            </div>
+            <div id="cartBox">
+                <div id="cartContent">
+                    <div id="cartTop">
+                        <div>카트<span>0</span></div>
+                        <div> 총 주문 금액 <span>0원</span></div>
+                    </div>
+                    <div id="cartBottom">
+                        <!-- 장바구니의 제품들 출력되는 구역 JS -->
+                        <!-- 카트에 제품 1개 -->
+                     
+          
+                    </div>
+                </div>
+                <div id="cartBtns">
+                    <input onclick="allde()" type="button" value="취소하기"/>
+                    <input onclick="order()" type="button" value="주문하기"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='step1.js'></script>
+</body>
+</html>

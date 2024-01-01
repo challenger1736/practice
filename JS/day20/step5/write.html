@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <h3> 글쓰기 페이지 </h3>
+    <a href="write.html">글쓰기</a> <a href="list.html"> 글목록</a>
+    <!-- day 17 step3 day20의 step5에다가 기능별 페이지 전환 , 단 localStorage 사용
+        1. 글쓰기 페이지
+        2. 글출력 페이지
+    -------------------------추가 기능------------------------
+        3. 글상세 페이지[ 글출력페이지에서 클릭된 게시물 정보 ]-->
+        <form>
+            작성자 : <input id="writer" type="text" /><br/>
+            비밀번호 : <input id="password" type="password" /><br/>
+            제목 : <input id="title" type="text" /><br/>
+            내용 : <textarea id="content"></textarea><br/>
+            <input onclick="글쓰기()" type="button" value="등록"/>
+        </form>
+        <script src='main.js'></script>
+</body>
+</html>

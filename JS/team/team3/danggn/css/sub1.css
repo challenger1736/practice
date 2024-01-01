@@ -1,0 +1,511 @@
+a{text-decoration: none; color: black;}
+/* 전체 랩 100% 백그라운드 컬러를 위하여 할당 */
+*{box-sizing: border-box;}
+#s1Rwap{
+    width: 100%;
+}
+/* 헤더 시작 */
+#s1_header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+}
+/* 로고 패딩 */
+#s1_headerLogo{
+    padding-right: 30px;
+}
+/* 헤더 ul 폰트사이즈 굵기 조절 */
+#s1_header > div > ul{
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+}
+/* nav a태그 색 마진 할당 */
+#s1_header > div > ul > li > a{
+    color: #4d5159;
+    margin-right: 25px;
+}
+/* 헤더 네비부분 크기 할당 센터 정렬 */
+#s1_headerNav{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+/* 현제 페이지 색상 변경 */
+.s1_navTextOrage{
+    color: orange;
+}
+/* 메뉴 마우스 hover시 색상 변경 */
+.s1_navTextHover:hover{
+    color: #868b94;
+}
+/* 헤더 검색 부분 센터 정렬 */
+#s1_headerSuch{
+    display: flex;
+    align-items: center;
+}
+/* 헤더 검색 인풋 설정 */
+#s1_headerSuch > input{
+    height: 40px; width: 280px;
+    border: none;
+    background-color: #f2f3f6;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 15px;
+    color: #868b94;
+}
+/* 헤더 채팅하기 부분 설정 */
+#s1_headerSuch a{
+    border: 1px solid #d1d3d8;
+    border-radius: 5px;
+    width: 100px; height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #212124;
+    margin-right: 50px;
+}
+/* 헤더 채팅하기 마우스 hover 시 색상 변경 */
+#s1_headerSuch a:hover{
+    color: #636365;
+    background-color: #f6f7f9;
+}
+/* 헤더 끝 */
+/* 중앙 컨텐츠 시작 */
+#s1_contentRwap{
+    width: 100%;
+    margin-top: 5px;
+}
+/* 중앙 사진부분 백그라운드 크기 100% 할당 및 컬러 설정 */
+#s1_content_Back{
+    width: 100%;
+    height: 300px;
+    background-color: #fff1aa;
+}
+/* 베너 텍스트 사진 센터정렬 박스 */
+#s1_content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 중앙 배너 텍스트 설정 H3 */
+#s1_contetRwapBaner h3{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+/* 중앙 배너 텍스트 설정 P */
+#s1_contetRwapBaner p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: absolute;
+    left: 100px;
+    top: 180px;
+}
+/* 중앙 배너 이미지 설정 */
+#s1_contetRwapBaner > img{
+    height: 300px;
+    position: absolute;
+    left: 450px;
+}
+/* 중앙 배너 끝 */
+/* 중앙 매물 거래 부분 시작 */
+/* h3 크기 ,폰트 , 센터 정렬 */
+#s1_contentRwap > h3{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0px 35px 0px;
+}
+/* 상품 이미지 시작부분 전체 크기 지정 밑 가운데 정렬 */
+#s1_contentBottom{
+    width: 800px;
+    margin: 0 auto;
+}
+/* 상품 정렬 밑 마진 설정 */
+#s1_ConBox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+/* 한상품당 크기 설정 시작 */
+.s1Box{
+    width: 300px;
+}
+.s1Box img{
+    width: 230px;
+    border-radius: 10px;
+}
+.s1Box h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.s1Box h5{
+    font-size: 15px;
+    font-weight: bold;
+    margin:10px 0px;
+}
+.s1Box p{
+    font-size: 13px;
+    line-height: 1.6;
+}
+.s1Box span{
+    color: #868ea0;
+}
+/* 한상품당 크기 설정 끝 */
+/* 인기매물 더보기 텍스트 크기 밑 센터정렬 */
+#s1_contentRwap > span{
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #212529;
+}
+/* 컨텐츠 하단 네비 부분 시작 크기 , 백그라운드 컬러 지정*/
+#s1_contentNavRwap{
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+}
+/* 하단 부분 가운데 정렬 */
+#s1_contentNav{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+/* 중고거래 인기검색어 폰트 사이즈 , 언더라인 */
+#s1_contentNav > a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 50px;
+}
+/* 컨텐츠 네비 정렬 */
+#s1_contentNav > ul{
+    display: flex;
+}
+/* 컨텐츠 네비 right 마진 설정 */
+#s1_contentNav > ul > li > a{
+    margin-right: 35px;
+}
+/* 푸터 시작 */
+
+/* 푸터 전체 크기 지정 밑 위쪽 줄 설정 */
+#s1_footer{
+    width: 100%;
+    border-top: 1px solid #EAEBEE;
+}
+/* 푸터 탑 시작 */
+#s1FooterTop{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #EAEBEE;
+}
+#s1FooterTop > ul{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+#s1FooterTop > ul > li{
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 14px;
+}
+#s1FooterTop > h5{
+    margin-top: 64px;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#s1FooterTop > div{
+    position: absolute;
+    top: 100px;
+    left: 455px;
+    display: flex;
+}
+
+.s1Google , .s1App{
+    width: 160px; height: 50px;
+    background-color: #F2F3F6;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px; 
+    margin-right: 20px;
+}
+.s1Google > a > img , .s1App > a > img{
+    height: 20px;
+    padding-right: 5px;
+}
+.footerText{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.s1Google > a , .s1App > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+/* 하단 앱스토어 구글스토어 투명도 설정 */
+.s1Google > a:hover , .s1App > a:hover{
+    opacity: 0.5;
+}
+/* 푸터 주소부분 시작 밑 크기 지정 */
+#s1FtAdressRwap{
+    width: 800px; 
+    margin: 20px auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.s1Baddress > address{
+    font-size: 12px;
+    color: #969AC1;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.s1Bicon > ul{
+    display: flex;
+    justify-content: right;
+}
+.s1Bicon > ul li > a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #868BA2;
+    padding-right: 10px;
+}
+.s1Bicon > ul > li > a > img{
+    height: 25px;
+    padding-right: 20px;
+}
+/* 푸터 중앙 문의 부분과 이용약관 부분 시작 */
+#s1FtMiddle , #s1FtBottom{
+    width: 800px;
+    margin: 0 auto;
+}
+#s1FtMiddle > ul , #s1FtBottom > ul{
+    display: flex; 
+    margin-bottom: 20px;
+}
+#s1FtMiddle > ul > li > a , #s1FtBottom > ul > li > a{
+    color: #868B94;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#s1FtBottom .BoottomSpanColor{color: #4D5159;}
+/* 페이스북 인스타그램 로고 등 마우스 hover 시 투명도 설정 */
+.s1Bicon > ul > li > a:hover{
+    opacity: 0.5;
+}
+/* a태그 마우스 hover시 언더라인 설정 */
+.unDerLine:hover{
+    text-decoration: underline;
+}
+
+
+/* =======================sub2 페이지 시작============================ */
+
+/* 중앙 사진부분 백그라운드 크기 100% 할당 및 컬러 설정 */
+#s1_content_Back_2{
+    width: 100%;
+    height: 300px;
+    background-color: #F7F1EB;
+}
+/* 베너 텍스트 사진 센터정렬 박스 */
+#s1_content_2{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 중앙 배너 텍스트 설정 H3 */
+#s1_contetRwapBaner_2 h3{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    
+}
+/* 중앙 배너 텍스트 설정 P */
+#s1_contetRwapBaner_2 p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: absolute;
+    left: 100px;
+    top: 180px;
+}
+/* 중앙 배너 이미지 설정 */
+#s1_contetRwapBaner_2 > img{
+    height: 250px;
+    position: absolute;
+    left: 450px;
+    top: 50px;
+}
+/* 중앙 상단 식당 버튼 부분 */
+#s1_conNav{width: 800px;margin: 0 auto;}
+/* 중앙 상단 식당 버튼 부분 센터정렬 */
+#s1_conNav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* 중앙 상단 식당 버튼 부분 폰트 밑 사이즈 조절 */
+#s1_conNav ul > li{
+    font-size: 15px;
+    padding: 12px; 
+    border: 1px solid #EDEEF1; 
+    border-radius: 20px;
+}
+
+.s1Li_color{
+    background-color: #4D5159;
+}
+.s1Li_color  span{
+    color: white;
+}
+#s1_conNav span{
+    border: 4px solid transparent;
+    background: linear-gradient(#4D5159, #4D5159) padding-box, linear-gradient(to left bottom, #4D5159, #4D5159) border-box;
+    padding: 1px;
+}
+/* 중앙 홍보 부분 시작 */
+#s1_contentMain2{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.s1_contentMain2Size{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    padding: 35px 0px;
+    border-bottom: 1px solid #EAEBEE;
+}
+.s1Nonunder{
+    border: none;
+}
+
+#s1_contentMain2 img{
+    height: 100px;
+    border-radius: 50px;
+}
+
+.s1_contentMain2_text{
+    padding-left: 20px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.s1_contentMain2_text h5{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.s1_contentMain2_text_gray{ color: #868B94; font-size: 14px;}
+
+#s1_contentRwap h2{
+    width: 800px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px 0px 35px 0px;
+}
+/* 중앙 하단 홍보 부분 시작 */
+#s1_contentMainBottom{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#s1_contentMainBottom > div{
+    width: 380px;
+    position: relative;
+    border: 1px solid #EAEBEE;
+    border-radius: 10px;
+    margin: 10px 15px 10px 0px;
+}
+#s1_contentMainBottom > div > a > p{
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    line-height: 1.3;
+}
+/* 중앙 맨 하단 베너 시작 */
+#s1_contentMainBtBener{
+    width: 800px;
+    height: 130px;
+    margin: 50px auto;
+    background-color: #FEF6EA;
+    display: flex;
+    align-items: center;
+}
+#s1_contentMainBtBener > div > img{
+    padding-left: 30px;
+}
+#s1_contentMainBtBener > div > h5{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 100px 10px 30px;
+}
+.s1_contentMainBtBenerText{
+    font-size: 16px;
+    padding: 0px 100px 10px 30px;
+}
+
+.bizpropil{
+    width: 180px;
+    height: 40px;
+    background-color: #FF6F0F;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+.bizpropil > a > p{
+    font-size: 16px;
+    color: white;
+}
+.s1_contentMain2Size:hover{
+    opacity: 0.7;
+}
+
+#s1_contentMainBottom > div:hover{
+    opacity: 0.7;
+}
+
+/* 중앙 배너 끝 */
+
+
+

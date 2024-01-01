@@ -1,0 +1,47 @@
+/* 공통 css */
+@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+ *{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'YClover-Bold';
+ }
+
+ /* 전체 구역 */
+ #wrap { width : 300px; margin: 0 auto; background-color: bisque; padding: 10px 10px;}
+
+ #todoTop{display: flex; height: 40px; justify-content: center;}
+ #content{width: 235px; padding:10px; border: none; box-shadow: 0px 0px 4px gray;
+    outline: none;/* 음! */
+}
+ #todoTop > input[type="button"]{
+    width: 50px; padding: 10px; border: none; box-shadow: 0px 0px 4px gray;
+ }
+
+ #todoTop > input[type="button"]:hover{
+    color: darkblue; 
+    cursor: pointer;
+ }
+
+ 
+ #todoTop > input[type="button"]:active{
+    color: brown;
+ }
+
+
+ .todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: yellowgreen
+}
+
+.success> .content{ text-decoration: line-through 3px; color:lightgray;}

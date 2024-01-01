@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    주차장 등록
+    차번호 : <input id="carNumber" type="text"/>
+    입차시간 : <input id="carTime" type="time"/>
+    <input onclick="입차()" type="button" value="입차"> <!-- onclick 과 함수가 연결됨 -->
+    <input id="inDate" type="datetime-local">
+
+    <br/>
+
+    출차
+    차번호 : <input id="carNumOut" type="text"/>
+    출차시간 : <input id="carDateOut" type="time"/>
+    <input onclick="출차()" type="button" value="출차">
+    <input id="outDate" type="datetime-local">
+ 
+    <p id="매출현황">일별 매출 현황</p>
+    <script src='ex2.js'></script>
+</body>
+</html>
