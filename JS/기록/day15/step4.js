@@ -62,7 +62,7 @@ function 삭제(삭제인덱스){      /* 삭제 펑션 */
 function 출력(){            /* 출력 펑션 */
     let output = ``;
 
-    let totalMoney = ``;
+    let totalMoney = 0;
 
 
 
@@ -82,7 +82,7 @@ function 출력(){            /* 출력 펑션 */
     /* 총 합계 만드는 함수 */
 
     for( let i = 0; i <금액배열.length; i++ ){
-        totalMoney = totalMoney*1+ Number(금액배열[i])
+        totalMoney = totalMoney+ Number(금액배열[i])
         
     }
 
