@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+    
+</head>
+<body>
+<!--   
+
+주제 가계부
+
+요구사항 
+
+    조건 배열 3개 사용 ( 등록, 출력, 삭제 )
+
+	1. 입력
+		날짜 항목 금액(천단위 쉼표 없이) [ 등록하면 저장 됨 ]
+	2. 출력
+        저장된 배열 내 모든 요소
+		날짜 항목 금액 출력
+    3. 삭제 
+        3가지 항목 같이 삭제
+
+==================추가 요구사항===================
+    1.css 간단히
+    2.천단위 쉼표를 만들어주는 함수 [JS에서 제공하는 함수X] .toLocaleString() 등 외부라이브러리 사용금지.
+    3.날짜 오름차순으로 출력되게 할 것 (정렬 함수나 로직)
+    4.총 합계
+
+ -->
+<div class="wrap">
+    <h2>가계부</h2>
+    <div class="divt1">
+        <div>
+            <div>날짜 : <input id="dateInput" type="date" /> </div>
+            <div>항목 : <input id="contentInput" type="text" placeholder="항목"/> </div>
+            <div>금액 : <input id="spendInput" type="text" placeholder="금액"/> </div>
+        </div>
+        <input onclick="등록()" id="inputBox" class="greenBox" type="button" value="등록"/>
+    </div>
+    <div id="divt2" class="divt2">
+        <div>날짜</div>
+        <div>항목</div>
+        <div>금액</div>
+        <div>비고</div>
+    </div>
+    <div id="divt3">
+             
+   
+    </div>
+        
+    <div id="plusBox" class="greenBox">총합계 : <span id="totalMoney"></span> </div>
+
+    <script src='step4.js'></script>
+</div>
+</body>
+</html>

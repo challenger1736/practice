@@ -1,0 +1,93 @@
+/* 주제 가계부
+
+요구사항 
+
+    조건 배열 3개 사용 ( 등록, 출력, 삭제 )
+
+	1. 입력
+		날짜 항목 금액(천단위 쉼표 없이) [ 등록하면 저장 됨 ]
+	2. 출력
+        저장된 배열 내 모든 요소
+		날짜 항목 금액 출력
+    3. 삭제 
+        3가지 항목 같이 삭제
+
+==================추가 요구사항===================
+    1.css 간단히 ㅇ
+    2.천단위 쉼표를 만들어주는 함수 [JS에서 제공하는 함수X] .toLocaleString() 등 외부라이브러리 사용금지.
+    3.날짜 오름차순으로 출력되게 할 것 (정렬 함수나 로직)
+    4.총합계 */
+
+.wrap{
+    width: 450px;
+
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 20px;
+}
+
+/* 초록 박스들 */
+
+.greenBox{
+    font-weight: bold;
+    background-color: #00ecae;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+
+}
+/* 입력 박스들 */
+
+
+input { outline: none; border: none; font-size: 16px;}
+
+
+.divt1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+    .divt1 > div > div {border-bottom: 1px solid lightgrey; padding: 10px; font-weight: bold;}
+
+/* 등록 버튼 */
+    #inputBox{
+        height: 80px;
+        width: 100px;
+    }
+    
+    #inputBox:hover{
+       background-color: rgba(0,236,174,0.7);
+       color: rgba(0,0,0,0.7);
+       cursor: pointer;
+    }
+
+.divt2{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.divt2>div{
+    width: 150px;
+}
+ #divt2{
+    font-weight: bold;
+ }
+/* 삭제 글씨 굵게 */
+    .bold {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+/* 총합계 보이는 곳 */
+    #plusBox{
+        margin-top: 15px;
+        padding: 10px ;
+    }

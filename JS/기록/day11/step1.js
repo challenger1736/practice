@@ -5,7 +5,6 @@
         // 1. prompt('message', '_default'); : 클라이언트에게 입력받는 알람 함수. ★★★ : [실행]
         // 2. prompt() 결과/반환/리턴값                                                 : [실행 결과]
         // 3. const input = 리턴된 값을 넣음                                            : [실행 결과 저장]
-
 /* alert(input); */
 
 //p.118 2. 불 입력 [ confirm() : 확인[true] / 취소[false]를 반환하는 알람함수]
@@ -20,7 +19,7 @@
 /* console.log(Number(true));  *//* 1 */
 /* console.log(Number(false));  *//* 0 */
 
-        //4. 숫자 연산을 사용해 자료형 변환하기 [ *단 숫자+"문자열" : 연결연산자 조심]
+        //4. 숫자 연산을 사용해 자료형 변환하기 [ *단 숫자+"문자열" : 연결연산자 조심] + 는 조심
 /* console.log("52"-3);        //49    결과의 자료형이 숫자로 변환
 console.log(true-1);        //0     결과의 자료형이 숫자로 변환
 console.log(true+1);        //2     결과의 자료형이 숫자로 변환
@@ -64,7 +63,7 @@ alert(`${inch}inch는 ${cm}cm 입니다.`) */
 
 
 // 앞으로의 웹 개발 방향   ////////////////////////////////////////////
-/* function 변환기능코드가지고있는상자(){
+function 변환기능코드가지고있는상자(){
 
     const 인치 = document.querySelector('input');
     console.log(인치);
@@ -77,7 +76,7 @@ alert(`${inch}inch는 ${cm}cm 입니다.`) */
     // ---------->처리-----------> JAVA에게 통신 보내기
     // 결과 = input에 입력 받은 value를 h3 [innerHTML = 마크업 사이에] 에 대입
     document.querySelector('h3').innerHTML = `${인치.value*2.54}cm`
-} */
+}
     //function 함수명(매개변수){구현할 기능 코드}
 // 변수 = let , 상수 = const, 함수 = function       선언 약속/규칙/문법
 /* 

@@ -1,0 +1,60 @@
+문자열.split('기준문자') : 문자열내 특정문자 기준으로 문자열 분리 함수 / 반환 : 배열 ★★★★★★
+
+
+배열에서
+
+.splice(2,1); // 2번 2인덱스로부터 1개 삭제
+
+.indexOf(name) // 배열에서 name이란 놈의 인덱스 번호 찾기
+
+
+
+별찍기
+
+output = ``;
+const value3 = Number(prompt('문제 3 수 입력'));
+for(let i = 1; i <= value3; i++){ 
+    for (let s=1 ; s <= i ; s++ ){output += `*`}
+
+    output += `\n`
+}
+console.log(output);
+
+
+문제10-2
+
+function 문제10(){
+const line = Number(document.querySelector(`#line10`).value);
+
+let html = ``;
+
+//[행]
+for(let r = 1 ; r<=line ; r++){
+    html += `<tr>`
+
+    //[열]
+    for( let c = 1; c<=line; c++){
+        if(c == r ){html += `<td>★</td>`}
+        else if(c+r == line+1){html+=`<td>★</td>`}
+        else{html += `<td>☆</td>`}
+    }
+
+    html += `</tr>`;
+}
+
+const tableObj = document.querySelector('table');
+console.log(tableObj);
+tableObj.innerHTML = html;
+}
+
+
+
+익명함수.
+        - function(){} : 함수에 이름이 없어서 함수호출이 불가능.
+        - 익명함수를 변수 / 상수에 넣자 그럼 변수/상수 호출시 함수가 실행.
+            - const/let 이름 = function(){}
+
+
+
+//////////////////////////////////////
+//리턴 값은 그 자리 function에서 나온다.
